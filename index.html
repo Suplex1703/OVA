@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso de Estrategias para la Enseñanza Virtual</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8477133498.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Curso de Estrategias</h1>
+        <button class="button" onclick="volverInicio()">
+          <i class="fas fa-home"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Contenido del OVA -->
+      <section id="intro">
+        <h2>Bienvenido al Curso de Estrategias para la Enseñanza Virtual</h2>
+        <p>
+          En este curso, aprenderás estrategias pedagógicas adaptadas al entorno
+          virtual para mejorar tus habilidades como docente.
+        </p>
+        <button class="button" onclick="comenzarCurso()">Comenzar</button>
+      </section>
+
+      <section id="taller1" class="actividad">
+        <h2>Taller 1: Diseño de Actividades Colaborativas en Línea</h2>
+        <p>
+          En este taller aprenderás a diseñar actividades que fomenten la
+          colaboración entre tus estudiantes en entornos virtuales.
+        </p>
+        <button
+          class="button"
+          id="btnLeccion1"
+          onclick="mostrarLeccion('leccion1')"
+        >
+          Lección 1
+        </button>
+
+        <div id="leccion1" style="display: none">
+          <h3>
+            Lección 1: Importancia de la colaboración en entornos virtuales
+          </h3>
+          <p>
+            En esta lección entenderás por qué es vital fomentar la colaboración
+            entre estudiantes en entornos virtuales y cómo puede mejorar el
+            aprendizaje.
+          </p>
+          <!-- Agregar contenido como libro -->
+          <div class="book">
+            <div class="page">
+              <h2>Introducción</h2>
+              <p>
+                La colaboración en entornos virtuales es crucial en el ámbito
+                educativo actual. Facilita el intercambio de ideas, promueve el
+                trabajo en equipo y enriquece el aprendizaje al fomentar la
+                participación activa de los estudiantes.
+              </p>
+            </div>
+            <!-- Agregar más páginas con ejemplos -->
+          </div>
+          <div class="video-container">
+            <video controls>
+              <source
+                src="y2mate.com - En Conectados con la Virtualidad conoce la importancia de las TIC_1080p.mp4"
+                type="video/mp4"
+              />
+              Tu navegador no soporta el elemento de video.
+            </video>
+          </div>
+
+          <!-- Subtítulo y respuesta a la pregunta -->
+          <h4>¿CUAL ES LA IMPORTANCIA DE LOS ENTORNOS VIRTUALES?</h4>
+          <p>
+            Los entornos virtuales son importantes porque permiten a los
+            estudiantes acceder a la educación desde cualquier lugar y en
+            cualquier momento. Además, facilitan la colaboración y el
+            intercambio de ideas entre estudiantes y profesores, lo que
+            enriquece el proceso de aprendizaje y fomenta una participación
+            activa en la comunidad educativa.
+          </p>
+          <br />
+
+          <!-- Imagen referente a la pregunta -->
+          <img
+            class="pregunta-imagen"
+            src="EntornosVirtuales.png"
+            alt="Entornos Virtuales"
+          /><br />
+
+          <!-- Nueva pregunta y respuesta -->
+          <h4>¿CUALES ENTORNOS VIRTUALES DE APRENDIZAJE PODEMOS UTILIZAR?</h4>
+          <p>
+            Algunos ejemplos de entornos virtuales de aprendizaje incluyen
+            plataformas de gestión de aprendizaje (LMS) como Moodle, Blackboard
+            y Canvas, así como herramientas de videoconferencia como Zoom y
+            Google Meet.
+          </p>
+          <br />
+
+          <!-- Imagen referente a la pregunta -->
+          <img
+            class="pregunta-imagen"
+            src="Apps Virtualidad.jpg"
+            alt="Entornos Virtuales"
+          /><br />
+
+          <!-- Nueva pregunta y respuesta -->
+          <h4>
+            ¿COMO PODEMOS UTILIZAR LAS HERRAMIENTAS DE ENTORNO VIRTUAL PARA EL
+            APRENDIZAJE?
+          </h4>
+          <p>
+            Las herramientas de entorno virtual pueden ser utilizadas de
+            diversas formas para facilitar el aprendizaje. Algunas estrategias
+            incluyen la creación de contenido interactivo, la participación en
+            discusiones en línea, la realización de actividades colaborativas y
+            la retroalimentación individualizada.
+          </p>
+          <br />
+
+          <!-- Imagen referente a la pregunta -->
+          <img
+            class="pregunta-imagen"
+            src="ACLARAR TERMINO.jpeg"
+            alt="Entornos Virtuales"
+          /><br />
+
+          <!-- Mensaje de felicitación -->
+          <p class="mensaje-final">
+            ¡FELICIDADES! TERMINASTE TU PRIMERA LECCIÓN!
+            <br />
+            Pasa a la siguiente aqui abajo <br />.
+          </p>
+          <br />
+
+          <button
+            class="button"
+            id="siguienteBtnTaller1"
+            style="float: right; margin-top: 10px"
+            onclick="mostrarSiguiente('taller2')"
+          >
+            Siguiente
+          </button>
+        </div>
+      </section>
+
+      <section id="taller2" class="actividad">
+        <h2>Taller 2: Manejo de Foros de Discusión</h2>
+        <p>
+          En este taller, exploraremos estrategias efectivas para gestionar y
+          moderar foros de discusión en entornos virtuales.
+        </p>
+        <button class="button" onclick="mostrarSiguiente('taller3')">
+          Siguiente
+        </button>
+      </section>
+
+      <section id="taller3" class="actividad">
+        <h2>
+          Taller 3: Estrategias para Fomentar la Participación Activa y el
+          Trabajo en Equipo
+        </h2>
+        <p>
+          Descubre cómo motivar a tus estudiantes para que participen
+          activamente y trabajen en equipo en entornos virtuales.
+        </p>
+        <button class="button" onclick="mostrarSiguiente('exploracion')">
+          Siguiente
+        </button>
+      </section>
+
+      <section id="exploracion" class="actividad">
+        <h2>Exploración de Herramientas de Comunicación</h2>
+        <p>
+          Conoce diversas herramientas de comunicación síncrona y asíncrona que
+          puedes utilizar en tu enseñanza virtual.
+        </p>
+        <button class="button" onclick="mostrarSiguiente('evaluacion')">
+          Siguiente
+        </button>
+      </section>
+
+      <section id="evaluacion" class="actividad">
+        <h2>Evaluación Final</h2>
+        <p>
+          Completa la evaluación final para demostrar tus conocimientos
+          adquiridos en el curso.
+        </p>
+        <button class="button" onclick="iniciarEvaluacion()">
+          Iniciar Evaluación
+        </button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
